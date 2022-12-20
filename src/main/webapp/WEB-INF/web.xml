@@ -1,23 +1,7 @@
 <web-app>
 
     <servlet>
-        <servlet-name>HelloWorldServlet</servlet-name>
-        <servlet-class>HelloWorldServlet</servlet-class>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
     </servlet>
-
-    <servlet-mapping>
-        <servlet-name>HelloWorldServlet</servlet-name>
-        <url-pattern>/welcome</url-pattern>
-    </servlet-mapping>
-
-    <filter>
-        <filter-name>DurationFilter</filter-name>
-        <filter-class>DurationFilter</filter-class>
-    </filter>
-
-    <filter-mapping>
-        <filter-name>DurationFilter</filter-name>
-        <url-pattern>/welcome</url-pattern>
-    </filter-mapping>
-
 </web-app>  

@@ -16,12 +16,19 @@
             <version>6.0.0</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.okta.authn.sdk</groupId>
+            <artifactId>okta-authn-sdk-api</artifactId>
+            <version>${okta.auth.version}</version>
+        </dependency>
     </dependencies>
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
         <maven.compiler.target>19</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <okta.sdk.version>1.5.2</okta.sdk.version>
+        <okta.auth.version>1.0.0</okta.auth.version>
     </properties>
     <build>
         <plugins>
