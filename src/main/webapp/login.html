@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="US-ASCII">
-  <title>Login Page</title>
+    <meta charset="US-ASCII">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header>
 
-<form action="LoginServlet" method="post">
+</header>
+<div class="form-container">
+    <div class="headline">
+        Title
+    </div>
+    <form action="DataServlet" method="post">
+        <div class="grid-container">
+            <div class="grid-item"><label>Anrede:</label></div>
+            <div class="grid-item"><select name="salutation">
+                <option value="Herr">Herr</option>
+                <option value="Frau">Frau</option>
+                <option value="Divers">Divers</option>
+            </select>
+            </div>
+            <div class="grid-item"><label>Vorname:</label></div>
+            <div class="grid-item">
+                <input type="text" name="name" required>
+            </div>
+            <div class="grid-item"><label>Nachname:</label></div>
+            <div class="grid-item">
+                <input type="text" name="surname" required>
+            </div>
+            <div class="grid-item"><label>Geburtstag:</label></div>
+            <div class="grid-item">
+                <input type="date" name="birthday" required>
+            </div>
 
-  Username: <input type="text" name="user">
-  <br>
-  Password: <input type="password" name="pwd">
-  <br>
-  <input type="submit" value="Login">
-</form>
+        </div>
+        
+        <hr>
+        <div class="button-container">
+            <input type="submit" value="Speichern" class="button">
+        </div>
+    </form>
+</div>
 </body>
 </html>

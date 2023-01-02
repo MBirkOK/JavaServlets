@@ -1,0 +1,79 @@
+:root {
+    --ok-cyan: #009AD8;
+    --ok-dark-blue: #006491;
+    --ok-blue-grey: #629AB4;
+    --ok-magenta: #E8308A;
+    --ok-berry: #88146E;
+    --ok-stone-grey: #878575;
+    --ok-grey-dark: #D9D9D7;
+    --ok-grey-medium: #E6E6E3;
+    --ok-grey-light: #F2F2F0;
+    --ok-white: #FFFFFF;
+
+    --ok-grey-transparent: #99999999;
+    --ok-transparent: #00000000;
+
+    --xxs: 4px;
+    --xs: 8px;
+    --s: 16px;
+    --m: 24px;
+    --l: 32px;
+    --xl: 40px;
+    --xxl: 48px;
+    --xxxl: 56px;
+}
+
+
+body {
+    font-family: "Arial";
+    color: var(--ok-stone-grey);
+}
+
+form {
+    position: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid-item{
+    padding-bottom: 2%;
+}
+
+.form-container {
+    margin-left: 25%;
+    margin-right: 25%;
+    box-shadow: 10px 5px 5px var(--ok-grey-dark);
+    border: 1px solid var(--ok-grey-medium);
+}
+
+.button {
+    background-color: #009AD8;
+    border-color: #009AD8;
+    border-radius: 8px;
+    color: white;
+    height: 36px;
+}
+
+.button-container {
+    text-align: right;
+}
+
+input, select {
+    margin-bottom: var(--s);
+    padding: var(--xxs);
+    line-height: var(--m);
+}
+
+.headline {
+    background: var(--ok-grey-light);
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border: solid var(--ok-grey-medium) 1px;
+}
+
+header {
+    background: var(--ok-dark-blue);
+}

@@ -32,7 +32,7 @@ public class LoginServlet extends HttpServlet {
 
         if(userID.equals(user) && password.equals(pwd)){
             HttpSession session = request.getSession();
-            session.setAttribute("user", "Pankaj");
+            session.setAttribute("user", "loggedIn");
             //setting session to expiry in 30 mins
             session.setMaxInactiveInterval(30*60);
             Cookie userName = new Cookie("user", user);
